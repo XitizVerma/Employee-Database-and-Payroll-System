@@ -18,7 +18,7 @@ public class home_payroll extends JFrame implements ActionListener
         f=new Font("arial",Font.BOLD,14);
         
         JMenuBar mb=new JMenuBar();
-        JMenu m1=new JMenu("Employe");
+        JMenu m1=new JMenu("Employee");
         JMenu m2=new JMenu("Update");
         JMenu m3=new JMenu("Attendence");
         JMenu m4=new JMenu("Exit");
@@ -28,7 +28,7 @@ public class home_payroll extends JFrame implements ActionListener
         m3.setFont(f);
         m4.setFont(f);
         
-        JMenuItem mt1=new JMenuItem("New Employe");
+        JMenuItem mt1=new JMenuItem("New Employee");
         ImageIcon img1=new ImageIcon(ClassLoader.getSystemResource("payroll_project/icons/icon3.png"));
         Image image=img1.getImage().getScaledInstance(16,16,Image.SCALE_DEFAULT);
         ImageIcon img2=new ImageIcon(image);
@@ -37,7 +37,7 @@ public class home_payroll extends JFrame implements ActionListener
         mt1.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Y,ActionEvent.CTRL_MASK));
         mt1.addActionListener(this);
         
-        JMenuItem mt2=new JMenuItem("Salery");
+        JMenuItem mt2=new JMenuItem("Salary");
         ImageIcon img3=new ImageIcon(ClassLoader.getSystemResource("payroll_project/icons/icon10.png"));
         Image image1=img3.getImage().getScaledInstance(16,16,Image.SCALE_DEFAULT);
         ImageIcon img4=new ImageIcon(image1);
@@ -46,7 +46,7 @@ public class home_payroll extends JFrame implements ActionListener
         mt2.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_S,ActionEvent.CTRL_MASK));
         mt2.addActionListener(this);
         
-        JMenuItem mt3=new JMenuItem("List Employe");
+        JMenuItem mt3=new JMenuItem("List Employee");
         ImageIcon img5=new ImageIcon(ClassLoader.getSystemResource("payroll_project/icons/icon17.png"));
         Image image3=img5.getImage().getScaledInstance(16,16,Image.SCALE_DEFAULT);
         ImageIcon img6=new ImageIcon(image3);
@@ -55,9 +55,9 @@ public class home_payroll extends JFrame implements ActionListener
         mt3.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_I,ActionEvent.CTRL_MASK));
         mt3.addActionListener(this);
         
-        //Update Menu..............
+        //Update Menu
         
-        JMenuItem mt4=new JMenuItem("Update Employe");
+        JMenuItem mt4=new JMenuItem("Update Employee");
         ImageIcon img7=new ImageIcon(ClassLoader.getSystemResource("payroll_project/icons/icon14.jpg"));
         Image imag4=img7.getImage().getScaledInstance(16,16,Image.SCALE_DEFAULT);
         ImageIcon img8=new ImageIcon(imag4);
@@ -66,7 +66,7 @@ public class home_payroll extends JFrame implements ActionListener
         mt4.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_U,ActionEvent.CTRL_MASK));
         mt4.addActionListener(this);
         
-        JMenuItem mt5=new JMenuItem("Update Salery");
+        JMenuItem mt5=new JMenuItem("Update Salary");
         ImageIcon img9=new ImageIcon(ClassLoader.getSystemResource("payroll_project/icons/icon16.png"));
         Image imag5=img9.getImage().getScaledInstance(16,16,Image.SCALE_DEFAULT);
         ImageIcon img10=new ImageIcon(imag5);
@@ -75,7 +75,7 @@ public class home_payroll extends JFrame implements ActionListener
         mt5.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_Y,ActionEvent.CTRL_MASK));
         mt5.addActionListener(this);
         
-        //Attendence Menu..............
+        //Attendence Menu
         
         JMenuItem mt6=new JMenuItem("Take Attendence");
         ImageIcon img11=new ImageIcon(ClassLoader.getSystemResource("payroll_project/icons/icon4.jpg"));
@@ -105,7 +105,7 @@ public class home_payroll extends JFrame implements ActionListener
         mt8.addActionListener(this);
         
         JMenuItem mt9=new JMenuItem("Exit");
-        ImageIcon img17=new ImageIcon(ClassLoader.getSystemResource("payroll_project/icons/cancle.png"));
+        ImageIcon img17=new ImageIcon(ClassLoader.getSystemResource("payroll_project/icons/cancel.png"));
         Image imag9=img17.getImage().getScaledInstance(16,16,Image.SCALE_DEFAULT);
         ImageIcon img18=new ImageIcon(imag9);
         mt9.setIcon(img18);
@@ -154,7 +154,7 @@ public class home_payroll extends JFrame implements ActionListener
     public void actionPerformed(ActionEvent e)
     {
         String comnd=e.getActionCommand();
-        if(comnd.equals("New Employe"))
+        if(comnd.equals("New Employee"))
         {
             new new_Employee().setVisible(true);  
         }
@@ -162,17 +162,17 @@ public class home_payroll extends JFrame implements ActionListener
         {
             new salary().setVisible(true);
         }
-        else if(comnd.equals("List Employe"))
+        else if(comnd.equals("List Employee"))
         {
             new list_employee().setVisible(true);
         }
-        else if(comnd.equals("Update Employe"))
+        else if(comnd.equals("Update Employee"))
         {
             new update_employee().setVisible(true);
         }
-        else if(comnd.equals("Update Salery"))
+        else if(comnd.equals("Update Salary"))
         {
-            new update_salery().setVisible(true);
+            new update_salary().setVisible(true);
         }
         else if(comnd.equals("Take Attendence"))
         {
@@ -192,7 +192,7 @@ public class home_payroll extends JFrame implements ActionListener
         }
         else
         {
-            JOptionPane.showMessageDialog(null,"sorry you press wrong button");
+            JOptionPane.showMessageDialog(null,"Sorry dear, looks like you pressed the wrong button !");
             setVisible(false);
         }   
     }
