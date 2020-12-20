@@ -24,7 +24,7 @@ public class login_page extends JFrame implements ActionListener
         f=new Font("arial",Font.BOLD,14);
         
         l1=new JLabel("UserName");
-        l2=new JLabel("Psaaword");
+        l2=new JLabel("Password");
         
         l1.setFont(f);
         l2.setFont(f);
@@ -38,7 +38,7 @@ public class login_page extends JFrame implements ActionListener
         pf.setFont(f);
         
         bt1=new JButton("Login");
-        bt2=new JButton("Cancle");
+        bt2=new JButton("Cancel");
         bt1.setBackground(Color.BLACK);
         bt1.setForeground(Color.WHITE);
         bt2.setBackground(Color.BLACK);
@@ -88,7 +88,7 @@ public class login_page extends JFrame implements ActionListener
                 }
                 else
                 {
-                    JOptionPane.showMessageDialog(null,"invalid username or password");
+                    JOptionPane.showMessageDialog(null,"Invalid username or password");
                     this.setVisible(false);
                 }
             }

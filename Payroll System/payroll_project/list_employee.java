@@ -16,7 +16,7 @@ public class list_employee extends JFrame implements ActionListener
     Font f;
     list_employee()
     {
-        super("List Employe");
+        super("List Employee");
         setSize(900,400);
         setLocation(100,100);
         setResizable(false);

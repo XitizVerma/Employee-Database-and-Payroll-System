@@ -16,7 +16,7 @@ public class update_employee extends JFrame implements ActionListener
     
     update_employee()
     {
-        super("Update Employe");
+        super("Update Employee");
         setSize(740,447);
         setLocation(200,70);
         setResizable(false);
@@ -177,7 +177,7 @@ public class update_employee extends JFrame implements ActionListener
         }
         if(e.getSource()==bt2)
         {
-            JOptionPane.showMessageDialog(null,"Are you sure?");
+            JOptionPane.showMessageDialog(null,"Are you sure to change the details?");
             setVisible(false);
         }
     }

@@ -77,7 +77,7 @@ public class generate_paySlip extends JFrame implements ActionListener
                     ta.append("\nEmploye Name : "+rest1.getString("name"));
                     ta.append("\n------------------------------------\n\n");
                 }
-                String q2="select * from salery where Eid='"+id+"'";
+                String q2="select * from salary where Eid='"+id+"'";
                 ResultSet rest2=obj1.stm.executeQuery(q2);
                 while(rest2.next())
                 {
